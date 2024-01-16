@@ -58,7 +58,7 @@ void *send_thread(void *arg)
         return (void*)-1;
     }
 
-    while (1) 
+    while (true) 
     {
         char send_buf[BUFFER_SIZE];
         bzero(send_buf, sizeof(send_buf));
