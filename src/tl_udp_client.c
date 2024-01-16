@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
     pid_t pid = fork();
     if (pid > 0) {
         // The parent process is responsible for sending messages.
-        while (1) {
+        while (true) {
             bzero(send_buf, sizeof(send_buf));    
 
             // read from stdin.
